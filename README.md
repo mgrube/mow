@@ -1,2 +1,2 @@
 # mow
-tradingintro
+Just run 'vagrant up'
