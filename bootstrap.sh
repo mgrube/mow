@@ -23,7 +23,7 @@ echo "*/2 * * * * python /vagrant/fetch_btce.py ltc_usd" >> crontasks
 echo "*/2 * * * * python /vagrant/fetch_btce.py ppc_usd" >> crontasks
 echo "*/2 * * * * python /vagrant/fetch_btce.py ppc_btc" >> crontasks
 crontab crontasks
-wget wget http://downloads.typesafe.com/scala/2.11.7/scala-2.11.7.tgz?_ga=1.262311372.1507431377.1443137757
+wget http://downloads.typesafe.com/scala/2.11.7/scala-2.11.7.tgz?_ga=1.262311372.1507431377.1443137757
 mv scala-2.11.7.tgz?_ga=1.262311372.1507431377.1443137757 ./scala.tgz
 tar -xzf ./scala.tgz
 cd ./scala-2.11.7
