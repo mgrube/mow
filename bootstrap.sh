@@ -9,6 +9,7 @@ apt-get -y install python-mysqldb
 apt-get -y install git
 apt-get -y install default-jre
 apt-get -y install default-jdk
+export JAVA_HOME=/usr/lib/jvm/java-1.7.0-openjdk-amd64
 git clone https://github.com/alanmcintyre/btce-api.git
 cd btce-api
 python setup.py install
@@ -28,5 +29,7 @@ tar -xzf ./scala.tgz
 cd ./scala-2.11.7
 cp -rf ./bin/* /bin/
 cp -rf ./lib/* /lib/
-wget http://www.eu.apache.org/dist/spark/spark-1.5.0/spark-1.5.0-bin-hadoop2.6.tgz
+wget http://apache.arvixe.com/spark/spark-1.5.0/spark-1.5.0-bin-hadoop2.6.tgz
 tar -xzf ./spark-1.5.0-bin-hadoop2.6.tgz
+mv ./spark-1.5.0-bin-hadoop2.6 /home/vagrant/spark-1.5.0
+cp /vagrant/environment /etc/environment
