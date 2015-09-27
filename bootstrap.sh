@@ -29,9 +29,10 @@ tar -xzf ./scala.tgz
 cd ./scala-2.11.7
 cp -rf ./bin/* /bin/
 cp -rf ./lib/* /lib/
-cp -rf ./python/pyspark /usr/lib/python2.7/
 wget http://apache.arvixe.com/spark/spark-1.5.0/spark-1.5.0-bin-hadoop2.6.tgz
 tar -xzf ./spark-1.5.0-bin-hadoop2.6.tgz
 mv ./spark-1.5.0-bin-hadoop2.6 /home/vagrant/spark-1.5.0
+cd ./spark-1.5.0
+cp -rf ./python/pyspark/ /usr/lib/python2.7/
 cp /vagrant/environment /etc/environment
 pip install py4j
