@@ -9,7 +9,6 @@ apt-get -y install python-mysqldb
 apt-get -y install git
 apt-get -y install default-jre
 apt-get -y install default-jdk
-export JAVA_HOME=/usr/lib/jvm/java-1.7.0-openjdk-amd64
 git clone https://github.com/alanmcintyre/btce-api.git
 cd btce-api
 python setup.py install
