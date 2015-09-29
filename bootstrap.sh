@@ -31,8 +31,7 @@ cp -rf ./lib/* /lib/
 wget http://apache.arvixe.com/spark/spark-1.5.0/spark-1.5.0-bin-hadoop2.6.tgz
 tar -xzf ./spark-1.5.0-bin-hadoop2.6.tgz
 mv ./spark-1.5.0-bin-hadoop2.6 /home/vagrant/spark-1.5.0
-cd ./spark-1.5.0
-cp -rf ./lib/* /lib/
-cp -rf ./python/pyspark/ /usr/lib/python2.7/
+cp /home/vagrant/spark-1.5.0/lib/* /lib/
+cp -rf /home/vagrant/spark-1.5.0/python/pyspark/ /usr/lib/python2.7/
 cp /vagrant/environment /etc/environment
 pip install py4j
