@@ -1,4 +1,5 @@
 #This is a modified version of the network wordcount example.
+#Exercise: Do something useful with the output
 
 from __future__ import print_function
 
@@ -30,6 +31,5 @@ if __name__ == "__main__":
     #agg = prices.reduce(lambda a, b : (a + b)).map(lambda a: a/count)
     prices.count().pprint()
     prices.pprint()
-    print 'test'
     ssc.start()
     ssc.awaitTermination()
