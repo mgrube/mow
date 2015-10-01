@@ -16,7 +16,7 @@ def isWithin30Sec(time):
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:
-        print("Usage: btc_pricemon.py <hostname> <port>", file=sys.stderr)
+        print("Usage: btcmonitor.py <hostname> <port>", file=sys.stderr)
         exit(-1)
     sc = SparkContext(appName="BTCPriceMonitor")
     ssc = StreamingContext(sc, 1)
