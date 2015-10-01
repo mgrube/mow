@@ -6,8 +6,8 @@ import sys
 import time
 
 while True:
-	time.sleep(30)
+	time.sleep(5)
 	alltrades = btceapi.getTradeHistory(sys.argv[1])
 	for t in alltrades:
-		print str(t.pair) + ',' +  str(t.price) + ',' +  str(t.amount) + ',' +  str(t.tid) + ',' + str(t.trade_type) + ',' + str(t.date) + '\n'
+		print str(t.pair) + ',' +  str(t.price) + ',' +  str(t.amount) + ',' +  str(t.tid) + ',' + str(t.trade_type) + ',' + str(t.date)
 	
