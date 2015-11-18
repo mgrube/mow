@@ -3,6 +3,7 @@
 #The next two lines determine what the root password for mysql is. Change if you like.
 debconf-set-selections <<< 'mysql-server mysql-server/root_password password iliketurtles'
 debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password iliketurtles'
+apt-get update
 apt-get -y install mysql-server
 apt-get -y install python-pip
 apt-get -y install python-mysqldb

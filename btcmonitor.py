@@ -26,10 +26,14 @@ if __name__ == "__main__":
     #lines.pprint(250)
     prices = lines.filter(lambda line: len(line.split(',')) > 5)\
 		  .filter(lambda line: isWithin30Sec(line.split(',')[5]))\
-                  .map(lambda line: float(line.split(',')[1])) 
+            
+    sums = prices.map(lambda line: (line.split(',')[0], float(line.split(',')[1]))).reduceByKey(lambda a,b: a+b)
+    counts = prices.map(lambda line: (line.split(',')[0], 1)).reduceByKey(lambda a,b: a+b)
+    sums = sums.join(counts)
+    avg = sums.map(lambda k: (k[0], k[1][0]/k[1][1]))
 
     #agg = prices.reduce(lambda a, b : (a + b)).map(lambda a: a/count)
-    prices.count().pprint()
-    prices.pprint()
+    avg.pprint()
+    #prices.pprint()
     ssc.start()
     ssc.awaitTermination()
