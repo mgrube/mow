@@ -27,7 +27,7 @@ if __name__ == "__main__":
     lines = ssc.socketTextStream(sys.argv[1], int(sys.argv[2]))
    
     prices = lines.filter(lambda line: len(line.split(',')) > 5)\
-		  .filter(lambda line: isWithin30Sec(line.split(',')[5]))\
+		  .filter(lambda line: isWithin30Sec(line.split(',')[5]))
             
     sums = prices.map(lambda line: (line.split(',')[0], float(line.split(',')[1]))).reduceByKey(lambda a,b: a+b)
     counts = prices.map(lambda line: (line.split(',')[0], 1)).reduceByKey(lambda a,b: a+b)
