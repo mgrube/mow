@@ -29,7 +29,7 @@ tar -xzf ./scala.tgz
 cd ./scala-2.11.7
 cp -rf ./bin/* /bin/
 cp -rf ./lib/* /lib/
-wget http://apache.arvixe.com/spark/spark-1.5.0/spark-1.5.0-bin-hadoop2.6.tgz
+wget http://apache.cs.utah.edu/spark/spark-1.5.2/spark-1.5.2-bin-hadoop2.6.tgz
 tar -xzf ./spark-1.5.0-bin-hadoop2.6.tgz
 mv ./spark-1.5.0-bin-hadoop2.6 /home/vagrant/spark-1.5.0
 cp /home/vagrant/spark-1.5.0/lib/* /lib/
