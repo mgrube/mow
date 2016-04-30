@@ -30,13 +30,13 @@ cd ./scala-2.11.7
 cp -rf ./bin/* /bin/
 cp -rf ./lib/* /lib/
 wget http://apache.cs.utah.edu/spark/spark-1.5.2/spark-1.5.2-bin-hadoop2.6.tgz
-tar -xzf ./spark-1.5.0-bin-hadoop2.6.tgz
-mv ./spark-1.5.0-bin-hadoop2.6 /home/vagrant/spark-1.5.0
+tar -xzf ./spark-1.5.2-bin-hadoop2.6.tgz
+mv ./spark-1.5.2-bin-hadoop2.6 /home/vagrant/spark-1.5.2
 cp /home/vagrant/spark-1.5.0/lib/* /lib/
 cp -rf /home/vagrant/spark-1.5.0/python/pyspark/ /usr/lib/python2.7/
 cp /vagrant/environment /etc/environment
 pip install py4j
 cd
-wget http://apache.arvixe.com/hadoop/common/hadoop-2.6.0/hadoop-2.6.0.tar.gz
-tar -xzf ./hadoop-2.6.0.tar.gz
-cp -rf ./hadoop-2.6.0/ /home/vagrant/
+wget http://apache.claz.org/hadoop/common/hadoop-2.6.2/hadoop-2.6.2.tar.gz
+tar -xzf ./hadoop-2.6.2.tar.gz
+cp -rf ./hadoop-2.6.2/ /home/vagrant/
