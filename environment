@@ -1,4 +1,4 @@
 PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/vagrant/spark-1.5.2/bin:/home/vagrant/hadoop-2.6.2/bin"
-SPARK_HOME="/home/vagrant/spark-1.5.2"
+SPARK_HOME="/home/vagrant/spark-2.1.0"
 JAVA_HOME="/usr/lib/jvm/java-1.7.0-openjdk-amd64"
 HADOOP_PREFIX="/home/vagrant/hadoop-2.6.2"

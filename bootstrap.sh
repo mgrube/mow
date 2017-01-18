@@ -29,11 +29,11 @@ tar -xzf ./scala.tgz
 cd ./scala-2.11.7
 cp -rf ./bin/* /bin/
 cp -rf ./lib/* /lib/
-wget http://apache.cs.utah.edu/spark/spark-1.5.2/spark-1.5.2-bin-hadoop2.6.tgz
-tar -xzf ./spark-1.5.2-bin-hadoop2.6.tgz
-mv ./spark-1.5.2-bin-hadoop2.6 /home/vagrant/spark-1.5.2
-cp /home/vagrant/spark-1.5.0/lib/* /lib/
-cp -rf /home/vagrant/spark-1.5.0/python/pyspark/ /usr/lib/python2.7/
+wget http://d3kbcqa49mib13.cloudfront.net/spark-2.1.0-bin-hadoop2.7.tgz
+tar -xzf ./spark-2.1.0-bin-hadoop2.7.tgz
+mv ./spark-2.1.0-bin-hadoop2.7 /home/vagrant/spark-2.1.0
+cp /home/vagrant/spark-2.1.0/lib/* /lib/
+cp -rf /home/vagrant/spark-2.1.0/python/pyspark/ /usr/lib/python2.7/
 cp /vagrant/environment /etc/environment
 pip install py4j
 cd
